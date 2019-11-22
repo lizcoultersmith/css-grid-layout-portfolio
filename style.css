@@ -1,3 +1,7 @@
+* {
+margin:0;
+padding:0;
+}
 :root {
 	font-size: 75.5%;
 	font-family: Montserrat, sans-serif;
@@ -5,7 +9,7 @@
 
 h1 {
 	font-size: 3.5rem;
-	font-weight: 300;
+	font-weight: 400;
 	text-align: center;
 	font-family: 'Oswald', sans-serif;
 	color: #3974b79d;
@@ -39,7 +43,7 @@ hr {
 	grid-auto-rows: minmax(150px, auto);
 }
 
-.image {
+.image { 
 	opacity: 1;
 	display: block;
 	width: 100%;
@@ -60,7 +64,6 @@ hr {
 }
 
 .gallery-item:hover .image {
-	-webkit-filter: grayscale(1);
 	filter: grayscale(1);
 }
 
@@ -71,22 +74,22 @@ hr {
 .gallery-item:hover {
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
 }
+
 .text {
 	color: white;
-	font-size: 16px;
-	padding: 16px 32px;
+	font-size: 2.5em;
+    padding: 16px 32px;
+    font-family: Oswald, sans-serif;
 }
 
 @media (max-width: 500px) {
-	.gallery-item,
-	body {
+	.gallery-item,body {
 		max-width: 30%;
 		grid-column: 2;
 		font-family: Oswald, sans-serif;
 		text-align: left;
 	}
-	div.container,
-	h1.text-center {
+	div.container, h1 {
 		text-align: left;
 		margin-left: 2em;
 	}
